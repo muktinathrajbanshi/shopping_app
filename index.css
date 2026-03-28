@@ -38,3 +38,37 @@ header {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card button {
+  padding: 10px;
+  border: none;
+  background: #22c55e;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background: #020617;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cart h2 {
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
