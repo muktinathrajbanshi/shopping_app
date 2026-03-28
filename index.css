@@ -72,3 +72,9 @@ header {
   justify-content: space-between;
   margin: 10px 0;
 }
+
+.total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
