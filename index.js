@@ -63,3 +63,20 @@ function updateCart() {
 
   totalDiv.innerText = "Total: $" + total;
 }
+
+function changeQty(index, amount) {
+  cart[index].qty += amount;
+
+  if (cart[index].qty <= 0) {
+    cart.splice(index, 1);
+  }
+
+  updateCart();
+}
+
+function removeItem(index) {
+  cart.splice(index, 1);
+  updateCart();
+}
+
+displayProducts();
