@@ -112,3 +112,27 @@ header {
   display: flex;
   gap: 5px;
 }
+
+.cart-controls button {
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.qty-btn {
+  background: #334155;
+  color: white;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+}
+
+#total {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #22c55e;
+  font-weight: bold;
+}
