@@ -35,3 +35,31 @@ function addToCart(id) {
 
   updateCart();
 }
+
+function updateCart() {
+  const cartItems = document.getElementById("cartItems");
+  const totalDiv = document.getElementById("total");
+
+  cartItems.innerHTML = "";
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    total += item.price * item.qty;
+
+    cartItems.innerHTML += `
+      <div class="cart-item">
+        <div>
+          <p>${item.name}</p>
+          <small>Qty: ${item.qty}</small>
+        </div>
+        <div class="cart-controls">
+          <button class="qty-btn" onclick="changeQty(${index}, -1)">-</button>
+          <button class="qty-btn" onclick="changeQty(${index}, 1)">+</button>
+          <button class="remove-btn" onclick="removeItem(${index})">✕</button>
+        </div>
+      </div>
+    `;
+  });
+
+  totalDiv.innerText = "Total: $" + total;
+}
