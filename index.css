@@ -89,3 +89,26 @@ header {
   padding: 20px;
   border-left: 1px solid #1e293b;
 }
+
+.cart h2 {
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.cart-item small {
+  color: #94a3b8;
+}
+
+.cart-controls {
+  display: flex;
+  gap: 5px;
+}
