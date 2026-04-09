@@ -130,3 +130,56 @@ header {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(34, 197, 94, 0.5);
 }
+
+/* Cart Panel (Glass + Floating) */
+.cart {
+  width: 300px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.cart h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30, 41, 59, 0.6);
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cart-item:hover {
+  background: rgba(51, 65, 85, 0.7);
+}
+
+.cart-item small {
+  color: #94a3b8;
+}
+
+/* Controls */
+.cart-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.cart-controls button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
