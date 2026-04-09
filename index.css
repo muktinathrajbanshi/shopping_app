@@ -212,3 +212,19 @@ header {
   font-weight: bold;
   text-align: center;
 }
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
+/* 1200px (Large Tablets / Small Laptops) */
+@media (max-width: 1200px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-right: 280px;
+  }
+
+  .cart {
+    width: 280px;
+  }
+}
