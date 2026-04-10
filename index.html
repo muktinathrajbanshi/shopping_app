@@ -7,23 +7,31 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>🛍️ Modern Shopping App</header>
+    <header>
+      🛍️ Modern Shopping App
+      <button onclick="toggleTheme()">🌙</button>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search products..." />
+
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="shoes">Shoes</option>
+        <option value="electronics">Electronics</option>
+        <option value="bags">Bags</option>
+      </select>
+    </div>
 
     <div class="main">
-      <input type="text" id="search" placeholder="Search products..." />
       <div class="products" id="products"></div>
 
       <div class="cart">
         <h2>🛒 Cart</h2>
         <div id="cartItems"></div>
-        <div id="total">Total: $0</div>
+        <h3 id="total">Total: $0</h3>
+        <button onclick="checkout()">Checkout</button>
       </div>
-
-      <select id="categoryFilter">
-        <option value="all">All</option>
-        <option value="shoes">Shoes</option>
-        <option value="clothes">Clothes</option>
-      </select>
     </div>
 
     <script src="index.js"></script>
