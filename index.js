@@ -3,6 +3,15 @@ document.getElementById("search").addEventListener("input", (e) => {
   displayProducts(products.filter(p => p.name.toLowerCase().includes(value)));
 });
 
+document.getElementById("categoryFilter").addEventListener("change", (e) => {
+  const category = e.target.value;
+  if (category === "all") {
+    displayProducts(products);
+  } else {
+    displayProducts(products.filter(p => p.category === category));
+  }
+});
+
 const products = [
   { id: 1, name: "Sneakers", price: 50, img: "https://cdn-icons-png.flaticon.com/512/2589/2589903.png" },
   { id: 2, name: "Smart Watch", price: 80, img: "https://cdn-icons-png.flaticon.com/512/747/747376.png" },
